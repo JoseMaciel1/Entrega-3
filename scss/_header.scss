@@ -1,0 +1,24 @@
+header{
+    background-color: #ca7d08;
+    nav{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+       li{
+        margin: 5px 0px;
+         .logo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img{
+                height: 100px;
+                width: 100px;
+                border-radius: 100px;
+                border: solid black 2px;
+            }
+         }
+       }
+    }
+}
