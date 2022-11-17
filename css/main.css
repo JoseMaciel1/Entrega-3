@@ -11,6 +11,12 @@ li {
 body {
   background-color: rgba(0, 0, 0, 0.178); }
 
+@media screen and (max-width: 576px) and (min-width: 540px) {
+  header nav {
+    align-items: center;
+    display: flex;
+    flex-direction: column; } }
+
 header {
   background-color: #ca7d08; }
   header nav {
