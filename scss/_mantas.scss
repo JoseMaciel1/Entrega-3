@@ -1,3 +1,5 @@
+$altura:200px;
+
 .conte{
     div{
         display: flex;
@@ -5,17 +7,20 @@
         align-items: center;
         justify-content: center;
         .boj{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
             margin: 20px 5%;
             img{
-                height: 400px;
-                @media (max-width: 900px){
-                    height: 300px;
-                }
+                height: $altura*2;
+               
             }
         }
     }
+}
+@mixin boj ($formato, $direccion, $justificado, $alineacion){
+    display: $formato;
+    flex-direction: $direccion;
+    justify-content: $justificado;
+    align-items: $alineacion;    
+}
+.boj {
+    @include boj ( flex, column, center, center)
 }

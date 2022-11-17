@@ -1,3 +1,5 @@
+$radio: 100px;
+
 header{
     background-color: #ca7d08;
     nav{
@@ -16,7 +18,7 @@ header{
             img{
                 height: 100px;
                 width: 100px;
-                border-radius: 100px;
+                border-radius: $radio;
                 border: solid black 2px;
             }
          }
